@@ -14,8 +14,8 @@ This hands-on project was entirely carried out on AWS cloud platform.
 The project covers the fundamental concepts of Apache Airflow such as DAG (Directed Acyclic Graph) and Operators, and it shows how to schedule the ETL pipeline. It also shows how to use sensor in the ETL pipeline.
 It begins with extracting JSON format data from the API, and then transforming it into CSV format while applying some logic and calculations on the dataset. The orchestration proceeds to dump the CSV file into an S3 bucket data lake. The project then concludes by loading the data from the S3 bucket into an already prepared Snowflake data warehouse.
 
-The project exemplifies how to use the S3KeySensor to wait for file to be present in an S3 bucket. In addition, it features how to create a stage area in Snowflake that points to an Amazon S3 bucket. 
-The project goes on to demonstrate how to build and automate the data pipeline to load data from Amazon S3 bucket into a snowflake table and using the EmailOperator to send out an email notification to stakeholders when the data completed loading in the snowflake table using Airflow running in an AWS EC2 instance. The orchestration would run once every day.
+The project exemplifies how to use the `S3KeySensor` to wait for file to be present in an S3 bucket. In addition, it features how to create a stage area in Snowflake that points to an Amazon S3 bucket. 
+The project goes on to demonstrate how to build and automate the data pipeline to load data from Amazon S3 bucket into a snowflake table and using the `EmailOperator` to send out an email notification to stakeholders when the data completed loading in the snowflake table using Airflow running in an AWS EC2 instance. The orchestration would run once every day.
 
 Finally the orchestration would also send out email alerts whenever the DAG is up for retry or ultimately fails. This will indeed help a data team to stay proactive on what is happening on the data pipeline and fix issues as soon as they occur thereby helping to meet the Service Level Agreement (SLA).
 <br><br>
