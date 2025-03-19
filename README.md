@@ -26,7 +26,7 @@ Finally the orchestration would also send out email alerts whenever the DAG is u
 3. OpenWeatherMap.ORG free account with API key (to serve as the data source)
 4. Mail app set up on a Google account (this would be used by Airflow to send emails)
 5. AWS account (obtain the Access Key and Secret Access Key for important Airflow connection)
-6. AWS EC2 instance with at least 4 GB memory (t2.medium, paid) Ubuntu Linux 
+6. AWS EC2 instance with at least 4 GB memory (t3.medium, paid) Ubuntu Linux 
 7. AWS S3 bucket to serve as data lake (created a folder 'lagos_weather' inside the S3 bucket) 
 8. Code Editor (I used VSCode) for connecting to EC2 instance to create code (DAG file) on Airflow
 9. Integration of the EC2 and S3 services via AWS IAM role permission policy
