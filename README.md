@@ -1,5 +1,5 @@
 # OpenWeatherMap API to S3 bucket to Snowflake ETL Pipeline by Airflow on EC2 with email notification
-This is my first ever AWS Cloud Data Engineering ETL project. The project was inspired by the tutelage of Dr Yemi Olanipekun. This data pipeline orchestration uses Apache Airflow on AWS EC2. 
+This is my first ever AWS Cloud Data Engineering ETL project. The project was inspired by the tutorials of Dr Yemi Olanipekun. This data pipeline orchestration uses Apache Airflow on AWS EC2. 
 
 It demonstrates how to build an ETL data pipeline that would extract data (JSON) from the OpenWeatherMap API, transform it, dump it as CSV in S3 bucket, then copy it to a destination table in Snowflake DW and send email notification.
 <br><br>
