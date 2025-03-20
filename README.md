@@ -1,5 +1,5 @@
 # OpenWeatherMap API to S3 bucket to Snowflake ETL Pipeline by Airflow on EC2 with email notification
-This is my first ever AWS Cloud Data Engineering ETL project. This data pipeline orchestration uses Apache Airflow on AWS EC2. 
+This is my first ever AWS Cloud Data Engineering ETL project. The project was inspired by the tutelage of Dr Yemi Olanipekun. This data pipeline orchestration uses Apache Airflow on AWS EC2. 
 
 It demonstrates how to build an ETL data pipeline that would extract data (JSON) from the OpenWeatherMap API, transform it, dump it as CSV in S3 bucket, then copy it to a destination table in Snowflake DW and send email notification.
 <br><br>
@@ -36,7 +36,7 @@ Finally the orchestration would also send out email alerts whenever the DAG is u
 ## STEPS OF THE WORKFLOW
 The following account of the project development process is not enough to enable the reader code along or replicate the whole process from start to finish. For instance, there is no detailing of the steps involved in creating accounts with Snowflake, OpenWeatherMap, and Amazon AWS. There is also no detailing of the steps in setting up the Google Mail app at security.google.com/settings/security/apppasswords, creating the AWS EC2 instance from scratch and preparing it to work with Airflow (Firewall settings), connecting VSCode to the EC2 instance, creating S3 bucket and integrating it with EC2 and Airflow, as well as accessing Airflow via web browser and creating Airflow connections to other services.
 
-However an experienced and capable Data Engineer should be familiar with how these are set up, but the reader who is not knowledgeable in these areas is hereby encouraged to do their own research, enrol in a Data Engineering bootcamp or learn from data engineering tutorials available online on some websites or some great channels on YouTube, or reach out to me for clarification. With that out of the way, let’s go over the key steps in this project.
+However someone who is knowledgeable in Data Engineering should be familiar with how these are set up, but the reader who is not knowledgeable in these areas is hereby encouraged to do their own research, enroll in a Data Engineering bootcamp or learn from data engineering tutorials available online on some websites or some great channels on YouTube (like Tuple Spectra), or reach out to me for clarification. With that out of the way, let’s go over the key steps in this project.
 <br><br>
 
 ### Step 1 (Setting up the Snowflake DW and creating the destination table):
@@ -213,7 +213,7 @@ For these two problems, I intend to do more findings as to the reason why they o
 
 I also understand that the DAG orchestration file does not meet certain development best practices, notably the hard-coding of security credentials in the DAG file. In future projects, these grey areas would be addressed properly as I continue to learn more in my BI Engineer learning journey.
 
-From project ideation, planning, development, testing, and deployment took me four (4) working days because as a self-taught BI Developer, this was my very first AWS Cloud Data Engineering project that is based on Airflow, EC2, S3, and Snowflake.
+From project ideation, planning, development, testing, and deployment took me four (4) working days because as a self-taught BI Developer, this was my very first AWS Cloud Data Engineering project that is based on Airflow, EC2, S3, and Snowflake. Moreover, I am thankful to Dr. Opeyemi ‘Yemi’ Olanipekun for inspiring me to carry out this project. His passionate way of teaching and guidance is second to none.
 
 Thank you for going through this project with me!
 
